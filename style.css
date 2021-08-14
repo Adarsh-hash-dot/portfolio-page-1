@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Righteous&family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+/* 
+font-family: 'MonteCarlo', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Titillium Web', sans-serif; */
+/* #2d2424
+#5C3D2E
+#B85C38
+#E0C097 */ /* base reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+#welcome-section {
+    height: 100vh;
+
+    background-image: linear-gradient(
+            90deg,
+            rgba(10, 10, 10, 0.8),
+            rgba(8, 8, 8, 0.9)
+        ),
+        url("https://i.ibb.co/QQYt242/ezgif-com-gif-maker-2.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: rgb(248, 247, 247);
+    font-family: "Titillium Web", sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: white;
+    display: inline-block;
+    border-bottom: 2px solid #e94808;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.subtext {
+    font-size: 2rem;
+    color: #e94808;
+    font-family: "Gowun Batang", serif;
+}
+
+#projects {
+    text-align: center;
+    padding: 5rem;
+    background-image: linear-gradient(
+            0deg,
+            rgba(19, 18, 18, 0.8),
+            rgba(17, 17, 17, 0.9)
+        ),
+        url("https://i.ibb.co/N3ZPtYG/ezgif-com-gif-maker3.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+#skill {
+    text-align: center;
+    padding: 5rem;
+    background-image: linear-gradient(
+            90deg,
+            rgba(10, 10, 10, 0.8),
+            rgba(8, 8, 8, 0.9)
+        ),
+        url("https://i.ibb.co/QQYt242/ezgif-com-gif-maker-2.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+#contact {
+    text-align: center;
+    height: 100vh;
+    padding: 5rem;
+    background-image: linear-gradient(
+            90deg,
+            rgba(10, 10, 10, 0.8),
+            rgba(8, 8, 8, 0.9)
+        ),
+        url("https://i.ibb.co/N3ZPtYG/ezgif-com-gif-maker3.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.skill-card {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+i {
+    margin: 10px;
+}
+
+.grid {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem 2rem;
+}
+
+.skill-grid {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem 2rem;
+}
+
+@media (max-width: 900px) {
+    .skill-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.button {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 35px;
+    background: transparent;
+    border: 1px solid #e94808;
+    color: #e94808;
+    display: inline-block;
+}
+
+@media (max-width: 1500px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    #skill {
+        padding: 2rem;
+    }
+    #projects {
+        padding: 2rem;
+    }
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: white;
+    padding: 20px;
+}
+
+.project-tile {
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+#pitch {
+    margin: auto;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    z-index: 10;
+}
+.nav-link {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgb(252, 250, 250);
+    font-family: "Righteous", cursive;
+    transition: all 0.5s;
+}
+.nav-link:hover {
+    color: #e94808;
+    border-bottom: 2px solid white;
+}
+
+#profile-link {
+    color: white;
+    transition: 0.3s;
+}
+
+#profile-link:hover {
+    color: #e94808;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    #scaled-frame {
+        zoom: 1;
+    }
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
